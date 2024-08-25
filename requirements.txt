@@ -1,0 +1,6 @@
+django
+django-cors-headers == 3.14.0
+djangorestframework == 3.14.0
+pandas
+openpyxl
+psycopg2-binary

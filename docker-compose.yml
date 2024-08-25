@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  backend:
+    image: ravi476/santabackend:v01
+    container_name: santabackend
+    ports:
+      - "8000:8000"
+   
+    # Add any other configurations needed for your Django backend
+
+  frontend:
+    image: ravi476/santafrontend:v01
+    container_name: santafrontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    # Add any other configurations needed for your React frontend
+
+ 
